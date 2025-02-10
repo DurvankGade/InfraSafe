@@ -29,15 +29,10 @@ const Upload = () => {
 
   return (
     <div>
-      <div className="p-4 bg-gray-900 text-white rounded-xl shadow-lg">
-        <h2 className="text-xl font-bold mb-2">Upload Image</h2>
-        <input type="file" onChange={handleFileChange} className="mb-2" />
-        <button
-          onClick={handleUpload}
-          className="bg-blue-500 px-4 py-2 rounded-lg"
-        >
-          Upload & Detect
-        </button>
+      <div className="page">
+        <h3 className="text-xl font-bold mb-2">Upload Image</h3>
+        <input type="file" onChange={handleFileChange} className="file" />
+        <button onClick={handleUpload}>Upload & Detect</button>
 
         {result && (
           <img

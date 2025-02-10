@@ -24,15 +24,12 @@ const LiveCamera = () => {
   }, [detecting]);
 
   return (
-    <div className="bg-gradient-to-r from-green-400 to-teal-500 p-8 rounded-xl shadow-xl text-center">
-      <h2 className="text-3xl font-semibold text-white mb-6">
+    <div className="page">
+      <h3 className="text-3xl font-semibold text-white mb-6">
         Real-Time Damage Detection
-      </h2>
-      <Webcam
-        ref={webcamRef}
-        screenshotFormat="image/png"
-        className="rounded-xl shadow-lg mb-4"
-      />
+      </h3>
+      <Webcam ref={webcamRef} screenshotFormat="image/png" className="web" />
+      <br />
       <button
         onClick={() => setDetecting(!detecting)}
         className={`px-6 py-3 rounded-lg text-white shadow-lg ${
