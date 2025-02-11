@@ -7,16 +7,16 @@ export default function Header() {
       <nav className="flexX">
         <ul className="navlinks flexX">
           <li>
-            <a href="">HOME</a>
+            <a href="#">HOME</a>
           </li>
           <li>
-            <a href="">ABOUT</a>
+            <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="">DEMO</a>
+            <a href="#demo">DEMO</a>
           </li>
           <li>
-            <a href="">CONTACT</a>
+            <a href="#futer">CONTACT</a>
           </li>
         </ul>
       </nav>

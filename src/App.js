@@ -13,7 +13,7 @@ const App = () => {
       <Header />
       <HomePage />
       <About />
-      <div classname="comp">
+      <div className="comp">
         <Upload />
         <LiveCamera />
       </div>

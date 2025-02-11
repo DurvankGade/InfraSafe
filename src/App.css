@@ -156,10 +156,18 @@ nav a.active::before {
   border: 1px solid black;
   box-shadow: 0 0 12px rgb(255, 255, 255);
 }
-.bullets > li {
+.space {
+  margin: 100px;
+  height: 10vh;
+}
+.bullets {
   list-style-type: disc;
   font-size: 1rem;
   color: yellow;
+}
+.imag {
+  text-align: center;
+  width: 200px;
 }
 footer {
   margin-top: 3rem;

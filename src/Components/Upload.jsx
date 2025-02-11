@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { div } from "@tensorflow/tfjs";
 
 const Upload = () => {
   const [image, setImage] = useState(null);
@@ -11,7 +10,7 @@ const Upload = () => {
   };
 
   const handleUpload = async () => {
-    if (!image) return;
+    if (!image) return alert("Please select an image first!");
 
     const formData = new FormData();
     formData.append("file", image);
@@ -19,11 +18,14 @@ const Upload = () => {
     try {
       const response = await axios.post(
         "http://localhost:5000/upload",
-        formData
+        formData,
+        {
+          headers: { "Access-Control-Allow-Origin": "*" }, // OPTIONAL
+        }
       );
       setResult(response.data);
     } catch (error) {
-      console.error("Error uploading image", error);
+      console.error("Error uploading image:", error);
     }
   };
 
@@ -35,10 +37,13 @@ const Upload = () => {
         <button onClick={handleUpload}>Upload & Detect</button>
 
         {result && (
-          <img
-            src={`data:image/png;base64,${result.image}`}
-            alt="Detection Result"
-          />
+          <div className="flexY flexX">
+            <img
+              src={`data:image/png;base64,${result.image}`}
+              alt="Detection Result"
+              className="imag"
+            />
+          </div>
         )}
       </div>
     </div>

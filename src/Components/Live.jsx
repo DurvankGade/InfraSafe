@@ -24,7 +24,7 @@ const LiveCamera = () => {
   }, [detecting]);
 
   return (
-    <div className="page">
+    <div className="page" id="demo">
       <h3 className="text-3xl font-semibold text-white mb-6">
         Real-Time Damage Detection
       </h3>
