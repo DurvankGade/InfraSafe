@@ -32,9 +32,3 @@ This repository contains a comprehensive solution for infrastructure damage dete
 - **Risk Assessment:** Utilize the risk assessment function to categorize the risk level based on the severity of the cracks.
 - **Surveillance Car:** Upload the ESP32 camera code to your ESP32 device and follow the instructions in the surveillance_car directory.
   We were not able to integrate the ML model with frontend due to time constraint.
-0 commit comments
-Comments
-0
- (0)
-Comment
-You're receiving notifications because you'r
