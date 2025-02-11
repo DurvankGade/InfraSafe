@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+#       InfraSafe Readme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This repository contains a comprehensive solution for infrastructure damage detection, focusing on crack prediction and severity assessment using a YOLOv model. Additionally, it includes a risk assessment function that evaluates structural integrity and categorizes risk levels. The project also features code for a surveillance car utilizing an ESP32 camera.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
+- **Crack Prediction**: Utilizes a YOLOv model to detect cracks in infrastructure.
+- **Severity Assessment**: Predicts the severity of detected cracks.
+- **Risk Assessment**: Evaluates structural integrity and categorizes risk levels into Low, Moderate, or High.
+- **Surveillance Car**: Code for a surveillance car using an ESP32 camera for real-time monitoring.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  ## Technologies Used
+- Python
+- TensorFlow/Keras (for YOLOv model)
+- OpenCV (for image processing)
+- ESP32 (for surveillance car)
+- React(for frontend)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Usage
+-**Crack Detection:** Run the YOLOv model on images of infrastructure to detect cracks.
+-**Severity Prediction:** After detecting cracks, use the severity assessment function to evaluate the severity.
+-**Risk Assessment:** Utilize the risk assessment function to categorize the risk level based on the severity of the cracks.
+-**Surveillance Car:** Upload the ESP32 camera code to your ESP32 device and follow the instructions in the surveillance_car directory.
+- **Crack Detection:** Run the YOLOv model on images of infrastructure to detect cracks.
+- **Severity Prediction:** After detecting cracks, use the severity assessment function to evaluate the severity.
+- **Risk Assessment:** Utilize the risk assessment function to categorize the risk level based on the severity of the cracks.
+- **Surveillance Car:** Upload the ESP32 camera code to your ESP32 device and follow the instructions in the surveillance_car directory.
+  We were not able to integrate the ML model with frontend due to time constraint.
+0 commit comments
+Comments
+0
+ (0)
+Comment
+You're receiving notifications because you'r
